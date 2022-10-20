@@ -13,14 +13,13 @@ We propose a residual structure layer of large and small receptive fields to ref
 
 We compare the effects of various methods by using two test indicators, namely, peak signal to noise ratio (PSNR) and structural similarity (SSIM), in objective values. Rainfall density is used as the judgment standard for heavy rain, moderate rain and light rain respectively. 
 
-<div align="center">|  Test Index   | PSNR  | SSIM  |
-|  ----  | ----  | ----  |
+|  Test Index   | PSNR  | SSIM  |
+|  :----:  | :----:  | :----:  |
 | LP  | 16.070 | 0.6668 |
 | JORDER  | 18.675 | 0.7043 |
 | DDN  | 21.897 | 0.7487 |
 | DID-MDN  | 20.472 | 0.7880 |
 | **OURS**  | **24.531** | **0.8751** |
-</div>
 
 Because of the fogging of the data, the difficulty of image restoration is further increased, resulting in the decline of the overall test indicators. It can be seen that many networks are not sensitive to the treatment after rain atomization, as shown in the following figure. Our method performs better than other results in processing complex rainfall images.
 
