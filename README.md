@@ -69,14 +69,14 @@ Pre-trained density-aware model can be downloaded at (Put it in the folder 'clas
 Pre-trained residule-aware model can be downloaded at (Put it in the folder 'residual_heavy'): https://drive.google.com/drive/folders/1bomrCJ66QVnh-WduLuGQhBC-aSWJxPmI?usp=sharing
 
 ## Training (Density-aware Deraining network using GT label)
-	python derain_train_2018.py  --dataroot ./facades/DID-MDN-training/Rain_Medium/train2018new  --valDataroot ./facades/github --exp ./check --netG ./pre_trained/netG_epoch_9.pth.
+	python Train.py  --dataroot ./facades/Rain_Medium/train2018new  --valDataroot ./facades/github --exp ./check --netG ./pre_trained/netG_epoch_9.pth.
 	Make sure you download the training sample and put in the right folder
 
 ## Density-estimation Training (rain-density classifier)
-	python train_rain_class.py  --dataroot ./facades/DID-MDN-training/Rain_Medium/train2018new  --exp ./check_class	
+	python train_rain_class.py  --dataroot ./facades/Rain_Medium/train2018new  --exp ./check_class	
 
 ## Testing
-	python demo.py --dataroot ./your_dataroot --valDataroot ./your_dataroot --netG ./pre_trained/netG_epoch_9.pth   
+	python predict.py --dataroot ./your_dataroot --valDataroot ./your_dataroot --netG ./pre_trained/netG_epoch_9.pth   
 
 ## Reproduce
 
