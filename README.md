@@ -14,7 +14,7 @@ We propose a residual structure layer of large and small receptive fields to ref
 We compare the effects of various methods by using two test indicators, namely, peak signal to noise ratio (PSNR) and structural similarity (SSIM), in objective values. Rainfall density is used as the judgment standard for heavy rain, moderate rain and light rain respectively. 
 
 |  Test Index   | PSNR  | SSIM  |
-|:-------------:|:-----------:|:-----------:|:-----------:|
+|:------:|:------:|:------:|:------:|
 | LP  | 16.070 | 0.6668 |
 | JORDER  | 18.675 | 0.7043 |
 | DDN  | 21.897 | 0.7487 |
