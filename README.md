@@ -6,7 +6,7 @@
 We propose a residual structure layer of large and small receptive fields to refine the characteristics of high receptive fields and low receptive fields. Specifically, the convolution core with large receptive field is used for some convolution layers in the network, and 3 × 3 to fuse the large and small receptive fields and add them to the input layer of the structure to form the large and small receptive field fusion residual structure layer.
 
 <p align="center">
-<img src="assert/network-archi.png" width="500px" height="400px"/>
+<img src="assert/network-archi.png" width="600px" height="500px"/>
 </p>
 
 ## Experimental Result
@@ -23,13 +23,6 @@ The real rainfall image does not have rain free images for PSNR and SSIM calcula
 <img src="assert/realworld_result.png" width="500px" height="400px"/>
 </p>
 
-
-	@inproceedings{derain_zhang_2018,		
-	  title={Density-aware Single Image De-raining using a Multi-stream Dense Network},
-	  author={Zhang, He and Patel, Vishal M},
-	  booktitle={CVPR},
-	  year={2018}
-	} 
 
 
 
