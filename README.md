@@ -14,7 +14,6 @@ We propose a residual structure layer of large and small receptive fields to ref
 We compare the effects of various methods by using two test indicators, namely, peak signal to noise ratio (PSNR) and structural similarity (SSIM), in objective values. Rainfall density is used as the judgment standard for heavy rain, moderate rain and light rain respectively. 
 
 <div align="center">
-	
 	|  Test Index   | PSNR  | SSIM  |
 	|  ----  | ----  | ----  |
 	| LP  | 16.070 | 0.6668 |
@@ -22,29 +21,26 @@ We compare the effects of various methods by using two test indicators, namely, 
 	| DDN  | 21.897 | 0.7487 |
 	| DID-MDN  | 20.472 | 0.7880 |
 	| **OURS**  | **24.531** | **0.8751** |
-	
 </div>
 
 Because of the fogging of the data, the difficulty of image restoration is further increased, resulting in the decline of the overall test indicators. It can be seen that many networks are not sensitive to the treatment after rain atomization, as shown in the following figure. Our method performs better than other results in processing complex rainfall images.
 
 <p align="center">
-<img src="assert/composite_result.png" width="1245px" height="880px"/>
+<img src="assert/composite_result.png" width="800px" height="600px"/>
 </p>
 
 The real rainfall image does not have rain free images for PSNR and SSIM calculation like the composite image, but we can feel the effect of network processing in this paper through subjective evaluation, as shown in the figure below.
 
 <p align="center">
-<img src="assert/realworld_result.png" width="1255px" height="899px"/>
+<img src="assert/realworld_result.png" width="800px" height="600px"/>
 </p>
 
 The following table shows the average running time of processing 1200 test images, all of which are 512 × 512 color images, our algorithm has more advantages.
 
 <div align="center">
-	
 	|     | LP  | JORDER  | DDN  | DID-MDN  | **OURS**  |
 	|  ----  | ----  | ----  | ----  | ----  | ----  |
 	| 512 × 512  | 2164.58 | 1.69 | 0.40 | 0.62 | **0.37** |
-	
 </div>
 
 
