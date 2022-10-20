@@ -35,7 +35,7 @@ The real rainfall image does not have rain free images for PSNR and SSIM calcula
 
 The following table shows the average running time of processing 1200 test images, all of which are 512 × 512 color images, our algorithm has more advantages.
 
-|     | LP  | JORDER  | DDN  | DID-MDN  | **OURS**  |
+|   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | LP  | JORDER  | DDN  | DID-MDN  | **OURS**  |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 512 × 512  | 2164.58 | 1.69 | 0.40 | 0.62 | **0.37** |
 
