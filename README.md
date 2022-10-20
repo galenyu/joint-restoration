@@ -6,21 +6,31 @@
 We propose a residual structure layer of large and small receptive fields to refine the characteristics of high receptive fields and low receptive fields. Specifically, the convolution core with large receptive field is used for some convolution layers in the network, and 3 × 3 to fuse the large and small receptive fields and add them to the input layer of the structure to form the large and small receptive field fusion residual structure layer.
 
 <p align="center">
-<img src="assert/network-archi.png" width="600px" height="500px"/>
+<img src="assert/network-archi.png" width="1000px" height="800px"/>
 </p>
 
 ## Experimental Result
 
-We compare the effects of various methods by using two test indicators, namely, peak signal to noise ratio (PSNR) and structural similarity (SSIM), in objective values. Rainfall density is used as the judgment standard for heavy rain, moderate rain and light rain respectively. Because of the fogging of the data, the difficulty of image restoration is further increased, resulting in the decline of the overall test indicators. It can be seen that many networks are not sensitive to the treatment after rain atomization, as shown in the following figure. Our method performs better than other results in processing complex rainfall images.
+We compare the effects of various methods by using two test indicators, namely, peak signal to noise ratio (PSNR) and structural similarity (SSIM), in objective values. Rainfall density is used as the judgment standard for heavy rain, moderate rain and light rain respectively. 
+
+|  Test Index   | PSNR  | SSIM  |
+|  ----  | ----  | ----  |
+| LP  | 16.070 | 0.6668 |
+| JORDER  | 18.675 | 0.7043 |
+| DDN  | 21.897 | 0.7487 |
+| DID-MDN  | 20.472 | 0.7880 |
+| **OURS**  | **24.531** | **0.8751** |
+
+Because of the fogging of the data, the difficulty of image restoration is further increased, resulting in the decline of the overall test indicators. It can be seen that many networks are not sensitive to the treatment after rain atomization, as shown in the following figure. Our method performs better than other results in processing complex rainfall images.
 
 <p align="center">
-<img src="assert/composite_result.png" width="500px" height="400px"/>
+<img src="assert/composite_result.png" width="1000px" height="800px"/>
 </p>
 
 The real rainfall image does not have rain free images for PSNR and SSIM calculation like the composite image, but we can feel the effect of network processing in this paper through subjective evaluation, as shown in the figure below.
 
 <p align="center">
-<img src="assert/realworld_result.png" width="500px" height="400px"/>
+<img src="assert/realworld_result.png" width="1000px" height="800px"/>
 </p>
 
 
